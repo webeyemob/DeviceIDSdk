@@ -1,0 +1,6 @@
+framework module DeviceIDSdk {
+  umbrella header "DeviceIDSdk.h"
+
+  export *
+  module * { export * }
+}
