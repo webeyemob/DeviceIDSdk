@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)getDeviceID;
 
 + (NSString *)getSdkVersion;
++ (int)getSdkVersionCode;
 
 @end
 

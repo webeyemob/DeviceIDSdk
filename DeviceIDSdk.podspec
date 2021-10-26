@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "DeviceIDSdk"
-  spec.version      = "1.0"
+  spec.version      = "1.1"
   spec.summary      = "DeviceIDSdk is the client for create device id."
   spec.homepage     = "https://github.com/webeyemob/DeviceIDSdk"
   spec.license      = { :type => 'MIT', :file => "LICENSE" }
@@ -10,5 +10,6 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks  = "DeviceIDSdk.framework"
   spec.frameworks       = 'SystemConfiguration'
   spec.weak_frameworks  = 'CoreTelephony', 'AdSupport','iAd'
+  spec.library = 'resolve.9'
   spec.pod_target_xcconfig = { 'BITCODE_GENERATION_MODE' => 'bitcode', 'OTHER_LDFLAGS' => '-lObjC' }
 end
